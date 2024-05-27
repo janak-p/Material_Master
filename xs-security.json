@@ -1,0 +1,42 @@
+{
+  "xsappname": "2tjproject",
+  "scopes": [
+    {
+      "name": "$XSAPPNAME.MatViewer",
+      "description": "MatViewer"
+    },
+    {
+      "name": "$XSAPPNAME.MatManager",
+      "description": "MatManager"
+    }
+  ],
+  "attributes": [],
+  "role-templates": [
+    {
+      "name": "MatViewer",
+      "description": "generated",
+      "scope-references": [
+        "$XSAPPNAME.MatViewer"
+      ],
+      "attribute-references": []
+    },
+    {
+      "name": "MatManager",
+      "description": "generated",
+      "scope-references": [
+        "$XSAPPNAME.MatManager"
+      ],
+      "attribute-references": []
+    }
+  ],
+  "oauth2-configuration": {
+    "redirect-uris": [
+      "http://*.localhost:4004/**",
+      "https://*.hana.ondemand.com/**",
+      "https://*.applicationstudio.cloud.sap/**",
+      "https://oauth.pstmn.io/v1/browser-callback",
+      "https://*.us10-001.hana.ondemand.com/**"
+    ]
+  },
+  "authorities-inheritance": false
+}
